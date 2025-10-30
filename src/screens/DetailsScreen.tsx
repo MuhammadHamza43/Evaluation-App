@@ -32,6 +32,7 @@ export default function DetailsScreen({ navigation, route }: DetailsScreenProps)
   useEffect(() => {
     navigation.setOptions({
       title: 'Product Details',
+      headerTitleAlign: 'center',
       headerStyle: {
         backgroundColor: theme.colors.surface,
       },
@@ -70,16 +71,16 @@ export default function DetailsScreen({ navigation, route }: DetailsScreenProps)
     try {
       await toggleFavorite(product.id);
       // Visual feedback is handled by the state change through useIsFavorite hook
-      
+
       // Provide subtle success feedback
       const action = isFavorite ? 'removed from' : 'added to';
       console.log(`Product ${action} favorites successfully`);
     } catch (error) {
       console.error('Failed to toggle favorite:', error);
-      
+
       // Enhanced error handling with specific messages
       let errorMessage = 'Failed to update favorites. Please try again.';
-      
+
       if (error instanceof Error) {
         if (error.message.includes('storage')) {
           errorMessage = 'Unable to save favorites. Please check your device storage and try again.';
@@ -87,7 +88,7 @@ export default function DetailsScreen({ navigation, route }: DetailsScreenProps)
           errorMessage = 'Connection issue while saving favorites. Your preference will be saved when connection is restored.';
         }
       }
-      
+
       Alert.alert(
         'Favorites Error',
         errorMessage,
@@ -363,6 +364,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     lineHeight: 40,
     marginBottom: 16,
+    textAlign: 'center',
   },
 
   // Product Price and Favorites Styles
