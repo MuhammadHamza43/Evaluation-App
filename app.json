@@ -1,19 +1,26 @@
 {
   "expo": {
-    "name": "ProductCatalogApp",
-    "slug": "ProductCatalogApp",
+    "name": "Product Catalog",
+    "slug": "product-catalog-app",
+    "owner": "hamza198",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "description": "A beautiful product catalog app to browse and favorite products",
+    "privacy": "public",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hamza198.productcatalogapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +28,22 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.hamza198.productcatalogapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ca8a93f5-f7b9-4267-bd9e-ded0b49b4ca9"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ca8a93f5-f7b9-4267-bd9e-ded0b49b4ca9"
     }
   }
 }

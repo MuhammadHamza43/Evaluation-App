@@ -126,7 +126,7 @@ src/
 
 ## 🌐 Public Expo Project
 
-**Expo Project URL**: `exp://exp.host/@your-username/ProductCatalogApp`
+**Expo Project URL**: `https://expo.dev/accounts/hamza198/projects/product-catalog-app`
 
 *Note: Replace with actual Expo project URL once published*
 
