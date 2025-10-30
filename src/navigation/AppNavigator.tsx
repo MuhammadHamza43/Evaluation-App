@@ -14,46 +14,46 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
  * Requirements: 1.1, 1.2, 1.3, 1.4
  */
 export default function AppNavigator() {
-  const { theme } = useTheme();
+    const { theme } = useTheme();
 
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Home"
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: theme.colors.surface,
-          },
-          headerTintColor: theme.colors.text,
-          headerTitleStyle: {
-            fontWeight: 'bold',
-            color: theme.colors.text,
-          },
-          contentStyle: {
-            backgroundColor: theme.colors.background,
-          },
-          headerShadowVisible: true,
-        }}
-      >
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{
-            title: 'Products',
-            headerRight: () => (
-              <ThemeToggle style={{ marginRight: 8 }} />
-            ),
-          }}
-        />
-        <Stack.Screen
-          name="Details"
-          component={DetailsScreen}
-          options={{
-            title: 'Product Details',
-            headerBackTitle: 'Back',
-          }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator
+                initialRouteName="Home"
+                screenOptions={{
+                    headerStyle: {
+                        backgroundColor: theme.colors.surface,
+                    },
+                    headerTintColor: theme.colors.text,
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                        color: theme.colors.text,
+                    },
+                    contentStyle: {
+                        backgroundColor: theme.colors.background,
+                    },
+                    headerShadowVisible: true,
+                }}
+            >
+                <Stack.Screen
+                    name="Home"
+                    component={HomeScreen}
+                    options={{
+                        title: 'Products',
+                        headerRight: () => (
+                            <ThemeToggle style={{ marginRight: 8 }} />
+                        ),
+                    }}
+                />
+                <Stack.Screen
+                    name="Details"
+                    component={DetailsScreen}
+                    options={{
+                        title: 'Product Details',
+                        headerBackTitle: 'Back',
+                    }}
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
