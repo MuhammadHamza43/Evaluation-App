@@ -1,6 +1,6 @@
 # ProductCatalogApp
 
-A React Native mobile application built with Expo that provides a product catalog with favorites functionality, theme switching, and offline support.
+A React Native mobile application built with Expo that provides a comprehensive product catalog with favorites functionality, theme switching, and offline support.
 
 ## 🚀 Features
 
@@ -168,9 +168,9 @@ expo publish
 
 ## 🐛 Known Issues & Limitations
 
-- Network error handling could be enhanced with retry strategies
+- Network error handling could be enhanced with advanced retry strategies
 - Image caching could be improved with more sophisticated cache management
-- Search could benefit from server-side filtering for large datasets
+- Search functionality could benefit from server-side filtering for large datasets
 
 ## 🤝 Contributing
 

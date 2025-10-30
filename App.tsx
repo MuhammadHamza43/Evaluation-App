@@ -4,12 +4,9 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View, StyleSheet, Alert } from 'react-native';
 import { ThemeProvider, AppProvider, useTheme } from './src/contexts';
 import { AppNavigator } from './src/navigation';
-import { ErrorBoundary } from './src/components/ErrorBoundary';
+import { ErrorBoundary } from './src/components/ErrorBoundary'; 
 
-/**
- * Main App Content Component with Navigation and Error Boundaries
- * Requirements: 1.1, 1.2, 1.3, 1.4
- */
+
 function AppContent() {
   const { theme } = useTheme();
 
