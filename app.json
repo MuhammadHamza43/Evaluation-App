@@ -2,11 +2,18 @@
   "expo": {
     "name": "Product Catalog",
     "slug": "product-catalog-app",
+    "owner": "hamza198",
+    "privacy": "public",
     "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "sdkVersion": "51.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "description": "A beautiful product catalog app to browse and favorite products",
     "splash": {
       "image": "./assets/splash-icon.png",
@@ -25,8 +32,6 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
       "package": "com.hamza198.productcatalogapp"
     },
     "web": {
@@ -34,7 +39,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "ca8a93f5-f7b9-4267-bd9e-ded0b49b4ca9"
+        "projectId": "ee4696ff-8d56-4ec1-b54d-d9c23db13f42"
       }
     }
   }
